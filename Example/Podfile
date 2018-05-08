@@ -1,0 +1,6 @@
+use_frameworks!
+target 'GunosyAdNetworkSDK-iOS_Tests' do
+  pod 'GunosyAdNetworkSDK-iOS', :path => '../'
+  
+  
+end
