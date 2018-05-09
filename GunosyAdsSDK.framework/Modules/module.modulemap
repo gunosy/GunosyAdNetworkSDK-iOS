@@ -1,0 +1,6 @@
+framework module GunosyAdsSDK {
+  umbrella header "GunosyAdsSDK.h"
+
+  export *
+  module * { export * }
+}
