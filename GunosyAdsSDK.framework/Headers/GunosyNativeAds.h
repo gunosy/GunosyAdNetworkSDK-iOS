@@ -32,7 +32,7 @@
  register view for click tracking.
  @param view tracking view.
  */
-- (void) registerViewForInteraction:(UIView *)view;
+- (void) registerViewForInteraction:(UIView *)view withViewController:(UIViewController *)viewController;
 
 /**
  send Impression to Gunosy Server, and notify 'nativeAdWillLogImpression' to delegate.
