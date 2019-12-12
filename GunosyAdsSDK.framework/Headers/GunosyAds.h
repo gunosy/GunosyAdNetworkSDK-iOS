@@ -13,6 +13,13 @@
 @property (nonatomic) BOOL verbose;
 
 + (GunosyAds *)sharedManager;
+/**
+ * Returns the SDK version.
+ *
+ * @return The GunosyAds SDK version.
+ */
++ (NSString*)getVersion;
+
 - (void)becomeActive;
 - (void)setMediaID:(NSString *)mediaID;
 - (void)setMediaUserID:(NSString *)mediaUserID;

@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GunosyAdsSDK'
-  s.version          = '1.0.11'
+  s.version          = '1.0.12'
   s.summary          = 'SDK for Gunosy Ad Network'
 
   s.description      = <<-DESC
