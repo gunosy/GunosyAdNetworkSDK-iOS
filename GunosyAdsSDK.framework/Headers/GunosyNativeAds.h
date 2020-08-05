@@ -10,6 +10,8 @@
 #import "GNAdvertisement.h"
 #import "GNAdChoicesView.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface GunosyNativeAds: GNAdvertisement
 
 @property (weak, nonatomic) id <GunosyNativeAdDelegate> adDelegate;
@@ -39,3 +41,5 @@
  */
 - (void) sendImpressionWithDelegate;
 @end
+
+NS_ASSUME_NONNULL_END
