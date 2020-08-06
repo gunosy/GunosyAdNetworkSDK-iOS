@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_ENUM(NSUInteger, GNAdOpenType) {
     GNAdOpenTypeSafari,  // Safariで開くこと
     GNAdOpenTypeWebView, // Safari、もしくはWebViewで開くこと
@@ -47,7 +49,7 @@ typedef NS_ENUM(NSUInteger, GNAdOpenType) {
  */
 -(BOOL) sendClickToResend:(BOOL) resend;
 
-+ (NSArray *)loadUnsendFromFile;
++ (NSArray<GNAdvertisement*> *)loadUnsendFromFile;
 + (void)deleteCache;
 - (void)resend;
 
@@ -59,10 +61,12 @@ typedef NS_ENUM(NSUInteger, GNAdOpenType) {
 /**
  Icon画像をキャッシュから取得する、ただし、キャッシュにない場合は取得し、完了後completionに渡す
  */
-- (UIImage *)iconImageWithCompletion:(void (^)(UIImage *image))completion;
+- (nullable UIImage *)iconImageWithCompletion:(nullable void (^)(UIImage *image))completion;
 
 /**
  banner画像をキャッシュから取得する、ただし、キャッシュにない場合は取得し、完了後completionに渡す
  */
-- (UIImage *)bannerImageWithCompletion:(void (^)(UIImage *image))completion;
+- (nullable UIImage *)bannerImageWithCompletion:(nullable void (^)(UIImage *image))completion;
 @end
+
+NS_ASSUME_NONNULL_END

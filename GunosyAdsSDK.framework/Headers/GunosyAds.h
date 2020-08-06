@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "GNAdvertisement.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface GunosyAds: NSObject
 @property (nonatomic) BOOL verbose;
 
@@ -25,6 +27,8 @@
 - (void)setMediaUserID:(NSString *)mediaUserID;
 - (void)setImagePreloadingEnabled:(BOOL)enabled;
 - (void)sendCustomData:(NSDictionary *)customData;
-- (void)getAdvertisementsByFrameId:(NSString *)frameId complete:(void (^)(NSArray *advertisements))complete;
+- (void)getAdvertisementsByFrameId:(NSString *)frameId complete:(void (^)(NSArray<GNAdvertisement *> *advertisements))complete;
 - (NSString *)adIdentifier;
 @end
+
+NS_ASSUME_NONNULL_END

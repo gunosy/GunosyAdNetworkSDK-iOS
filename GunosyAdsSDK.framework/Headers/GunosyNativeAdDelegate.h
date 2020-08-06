@@ -6,6 +6,8 @@
 //  Copyright © 2018年 Gunosy inc.,. All rights reserved.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class GunosyNativeAds;
 
 @protocol GunosyNativeAdDelegate<NSObject>
@@ -20,3 +22,5 @@
 - (void)nativeAdWillLogImpression:(GunosyNativeAds *)nativeAd;
 
 @end
+
+NS_ASSUME_NONNULL_END
